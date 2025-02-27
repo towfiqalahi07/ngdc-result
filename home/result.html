@@ -206,10 +206,23 @@
             </table>
 
             <div class="button-container">
-                <button class="download-btn">Download Transcript</button>
+                <button class="download-btn" id="downloadButton">Download Transcript</button>
                 <button class="search-again-btn" onclick="window.location.href='index.html'">Search Again</button>
             </div>
         </div>
     </div>
 </body>
+        <script>
+    document.getElementById('downloadButton').addEventListener('click', function() {
+        const pdfUrl = '/home/1388.pdf'; // Update this if the file is in a subfolder, e.g., 'docs/HSC_Result.pdf'
+        const a = document.createElement('a');
+        a.href = pdfUrl;
+        a.download = '/home/1388.pdf'; // This ensures the file is downloaded
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    });
+</script>
+
+    
 </html>
