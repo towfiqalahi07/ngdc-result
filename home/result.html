@@ -1,1 +1,215 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSC Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            background-color: white;
+        }
+        .header {
+            background-color: #337ab7;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 20px;
+        }
+        .content {
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f9f9f9;
+        }
+        .download-btn {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            text-align: center;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .search-again-btn {
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            text-align: center;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            HSC Result
+        </div>
+        <div class="content">
+            <table>
+                <tr>
+                    <th>Exam</th>
+                    <td>Test Examination-2025</td>
+                </tr>
+                <tr>
+                    <th>Student's Name</th>
+                    <td>MD. ZAHID HASSAN</td>
+                </tr>
+                <tr>
+                    <th>Father's Name</th>
+                    <td>MD. ZIAUR RAHMAN</td>
+                </tr>
+                <tr>
+                    <th>Mother's Name</th>
+                    <td>MST. NARGIS SULTANA</td>
+                </tr>
+                <tr>
+                    <th>Student ID</th>
+                    <td>20231388</td>
+                </tr>
+                <tr>
+                    <th>Session</th>
+                    <td>2023-2024</td>
+                </tr>
+                <tr>
+                    <th>Group</th>
+                    <td>Science</td>
+                </tr>
+            </table>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>Subject Name</th>
+                        <th>CQ</th>
+                        <th>MCQ</th>
+                        <th>PR</th>
+                        <th>Total Marks</th>
+                        <th>Grade</th>
+                        <th>Grade Point</th>
+                        <th>GPA (Without 4th)</th>
+                        <th>CGPA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>102</td>
+                        <td>Bangla</td>
+                        <td>87</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>87</td>
+                        <td>A+</td>
+                        <td>5</td>
+                        <td>5.00</td>
+                        <td rowspan="7">5.00</td>
+                    </tr>
+                    <tr>
+                        <td>108</td>
+                        <td>English</td>
+                        <td>86</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>86</td>
+                        <td>A+</td>
+                        <td>5</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>275</td>
+                        <td>ICT</td>
+                        <td>45</td>
+                        <td>17</td>
+                        <td>25</td>
+                        <td>87</td>
+                        <td>A+</td>
+                        <td>5</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>175</td>
+                        <td>Physics</td>
+                        <td>42</td>
+                        <td>22</td>
+                        <td>22</td>
+                        <td>86</td>
+                        <td>A+</td>
+                        <td>5</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>177</td>
+                        <td>Chemistry</td>
+                        <td>43</td>
+                        <td>21</td>
+                        <td>25</td>
+                        <td>89</td>
+                        <td>A+</td>
+                        <td>5</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>266</td>
+                        <td>Higher Mathematics</td>
+                        <td>38</td>
+                        <td>21</td>
+                        <td>21</td>
+                        <td>80</td>
+                        <td>A+</td>
+                        <td>5</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>179</td>
+                        <td>Biology</td>
+                        <td>44</td>
+                        <td>19</td>
+                        <td>18</td>
+                        <td>81</td>
+                        <td>A+</td>
+                        <td>5</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="button-container">
+                <button class="download-btn">Download Transcript</button>
+                <button class="search-again-btn" onclick="window.location.href='index.html'">Search Again</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
